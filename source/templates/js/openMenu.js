@@ -1,6 +1,8 @@
 // this is to open and close the menu on mobile devices
 
-let menu = document.querySelector(".menu");
+let $ = (selector) => document.querySelector(selector); // this is to avoid writing document.querySelector again and again
+
+let menu = $(`.menu`);
 
 document.getElementById("dropdown").addEventListener("click", () => {
 	menu.style.width = "100%";
