@@ -3,11 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Oxigen-</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>
-        Hello World
-    </h1>
+   <div class="container">
+       <header>
+           <div class="logo"><a href="#"><img src="../templates/icons/369a388a-726c-46cb-85f9-c145cdf47295_200x200.png" alt="logo"></a></div>
+           <nav class="menu">
+               <ul>
+                   <li class="closetbn">&times;</li>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Contact</a></li>
+                   <li class="btn" ><a href="#">Sign In</a></li>
+               </ul>
+           </nav>
+           <button class="btn">Sign In</button>
+           <button type="button" class="icon" id="dropdown" alt="menu"></button>
+       </header>
+       <main>
+           <section id="home">
+               <div class="cnt home">
+                    <h1>welcome! <br> read and share your ideas.</h1>
+                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Cumque veritatis non incidunt sunt accusantium repellendus quam!</h3>
+                    <div class="btn">
+                        <button>Sign In</button>
+                    </div>
+                </div>
+            </section>
+       </main>
+       <footer></footer>
+   </div>
+   <div class="sign-in">
+       <div class="cnt register">
+           <div class="form">
+               <form action=http://localhost:5000/index method="POST" class="register-form">
+                   <h1>Join Oxigen-</h1>
+                   <input type="text" class="username" name="nm" placeholder="Username" required>
+                   <input type="text" class="password" name="ps" placeholder="password" required>
+                   <button id="btn">Sign In</button>
+               </form>
+               <div class="closeSection">&times;</div>
+           </div>
+       </div>
+   </div>
+   <script src="js/openMenu.js"></script>
+   <script src="js/sign-in.js"></script>
 </body>
 </html>

@@ -15,4 +15,4 @@ def log_in():
             jwt_token=create_access_token(identity=user.email)
             return jsonify({"token":jwt_token})
     else:
-        return "Invalid email or password",400
+        return "Invalid email or password",400 
